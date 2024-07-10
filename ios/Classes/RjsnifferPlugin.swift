@@ -24,6 +24,10 @@ public class RjsnifferPlugin: NSObject, FlutterPlugin {
             let amIDebugged = IOSSecuritySuite.amIDebugged()
             result(amIDebugged)
             break
+        case "runprog5":
+            let amIReverseEngineered = IOSSecuritySuite.amIReverseEngineered()
+            result(amIReverseEngineered)
+            break
         default:
             result(FlutterMethodNotImplemented)
         }

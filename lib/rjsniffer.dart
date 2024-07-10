@@ -12,4 +12,8 @@ class Rjsniffer {
   static Future<bool?> amIDebugged() {
     return RjsnifferPlatform.instance.amIDebugged();
   }
+
+  static Future<bool?> amIReverseEngineered() {
+    return RjsnifferPlatform.instance.amIReverseEngineered();
+  }
 }
