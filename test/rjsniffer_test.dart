@@ -24,6 +24,12 @@ class MockRjsnifferPlatform
     // TODO: implement amIDebugged
     throw UnimplementedError();
   }
+  
+  @override
+  Future<bool?> amIReverseEngineered() {
+    // TODO: implement amIReverseEngineered
+    throw UnimplementedError();
+  }
 }
 
 void main() {

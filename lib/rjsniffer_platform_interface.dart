@@ -34,4 +34,9 @@ abstract class RjsnifferPlatform extends PlatformInterface {
   Future<bool?> amIDebugged() {
     throw UnimplementedError('amIDebugged() has not been implemented.');
   }
+
+  Future<bool?> amIReverseEngineered() {
+    throw UnimplementedError(
+        'amIReverseEngineered() has not been implemented.');
+  }
 }

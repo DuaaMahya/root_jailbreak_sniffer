@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -25,5 +27,14 @@ class MethodChannelRjsniffer extends RjsnifferPlatform {
   Future<bool?> amIDebugged() async {
     final debugged = await methodChannel.invokeMethod<bool>('runprog3');
     return debugged;
+  }
+
+  @override
+  Future<bool?> amIReverseEngineered() async {
+    if (Platform.isIOS) {
+      final debugged = await methodChannel.invokeMethod<bool>('runprog5');
+      return debugged;
+    }
+    return null;
   }
 }
